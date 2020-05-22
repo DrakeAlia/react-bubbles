@@ -1,6 +1,8 @@
 import axios from 'axios';
 
 // Stage 1 - Authentication
+// Build a axiosWithAuth module to create an instance of axios with the authentication header
+// Save the token to localStorage
 export const axiosWithAuth = () => {
 	const token = localStorage.getItem('token');
 

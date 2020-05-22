@@ -8,7 +8,7 @@ const initialColor = {
 	color: '',
 	code: { hex: '' }
 };
-
+// the saveEdit and deleteColor functions to make AJAX requests to the API to edit/delete data
 const ColorList = ({ colors, updateColors }) => {
 	const history = useHistory();
 	// console.log(colors);
