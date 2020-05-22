@@ -130,6 +130,8 @@ app.post("/api/colors", authenticator, (req, res) => {
   res.status(201).json(colors);
 });
 
+// [PUT] to /api/colors/:id: updates the color using the id passed as part of the URL. 
+// Send the color object with the updated information as the body of the request (the second argument passed to axios.put).
 app.put("/api/colors/:id", authenticator, (req, res) => {
   if (!req.params.id)
     res.status(400).send("Your request is missing the color id");
